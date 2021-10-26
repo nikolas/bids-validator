@@ -27,7 +27,7 @@ jobs:
         run: npm install
       - name: Eslint
         run: npm run lint
-      -name: Get bids-examples data
+      - name: Get bids-examples data
         run: git submodule update --init
       - name: Jest tests
         run: npm run coverage -- --maxWorkers=2 --testTimeout=10000
