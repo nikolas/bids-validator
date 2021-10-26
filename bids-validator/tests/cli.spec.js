@@ -2,7 +2,7 @@ import cli from '../cli'
 import path from 'path'
 
 const dir = process.cwd()
-const data_dir = path.join(__dirname, 'data')
+const data_dir = path.join(dir, 'bids-validator', 'tests', 'data')
 const data_with_errors = path.join(data_dir, 'empty_files')
 const data_without_errors = path.join(data_dir, 'valid_dataset')
 
