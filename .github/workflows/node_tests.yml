@@ -23,8 +23,9 @@ jobs:
           git config --global user.email "bids.maintenance@gmail.com"
           git config --global user.name "bids-maintenance"
       - name: Set up Python ${{ matrix.python-version }}
-        run: npm install -g npm@^7
-        run: npm install
+        run: |
+          npm install -g npm@^7
+          npm install
       - name: Eslint
         run: npm run lint
       - name: Get bids-examples data
